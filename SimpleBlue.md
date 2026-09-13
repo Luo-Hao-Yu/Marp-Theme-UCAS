@@ -1,21 +1,38 @@
 ---
 marp: true
-theme: UCASSimple
+theme: TJUSimple
 paginate: true
 ---
 
 <style scoped>
     section {
-  text-align: center;
+        text-align: center;
+        background: white;
+    }
+    /* 首页标题栏：仅横向铺满，两行标题共用同一底色。 */
+    h1, h2 {
+        background-color: rgb(0, 70, 140);
+        margin-left: -50px;
+        margin-right: -50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-shadow: none;
+    }
+    h1 {
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin-top: 0;
+        padding-bottom: 20px;
     }
 </style>
 
 <!--
-_backgroundImage: url("./images/bg1.jpg")
 _paginate: false 
 -->
 
-![img w:400px h:80px](./images/logo.png)
+![img w:400px](./images/tju_white_padding.png)
 # 汇报题目 h1样式
 ## 副标题 h2样式
 
@@ -29,7 +46,7 @@ _paginate: false
   text-align: center;
     }
     h1 {
-        color: rgb(60, 112, 198);
+        color: rgb(0, 70, 140);
         margin-bottom: 30px;
     }
     h6 {
@@ -41,7 +58,7 @@ _paginate: false
 _paginate: false 
 -->
 
-![bg left:45%](./images/bg2.jpg)
+<!-- ![bg left:45%](./images/bg2.jpg) -->
 # 目 录
 
 ###### 1 Slide 概述
@@ -61,11 +78,11 @@ _paginate: false
 **环境：**
 - 系统：Win10
 - 软件：VsCode 插件：Marp
-- theme：自定义主题 UCASSimple ，基于官方uncover主题修改
+- theme：自定义主题 TJUSimple ，基于官方uncover主题修改
   
 **特征：**
-- 背景选用简约蓝色背景，每页上方标题栏基于Marp header格式进行修改而成。
-- 首尾页和目录页蓝色色块基于背景得到，首尾页可根据文字内容在本页修改标题样式，目录页可根据文字内容对色块进行大小位置调整
+- 背景选用北洋蓝背景，每页上方标题栏基于Marp header格式进行修改而成。
+- 首尾页和目录页北洋蓝基于背景得到，首尾页可根据文字内容在本页修改标题样式，目录页可根据文字内容对色块进行大小位置调整
 
 ---
 <!-- _header: 2 文字展示 -->
@@ -142,7 +159,8 @@ $$
 ### 普通图片
 图片滤镜命令
 
-![img w:500px](images/photo.png)![img w:300px](images/bg3.jpg)|
+![img w:500px](images/photo.png)
+<!-- ![img w:300px](images/bg3.jpg)| -->
 
 
 ---
@@ -186,14 +204,13 @@ $$
 </style>
 
 <!--
-_backgroundImage: url("./images/bg1.jpg")
+_backgroundImage: linear-gradient(to bottom, white 37%, rgb(0, 70, 140) 37%, rgb(0, 70, 140) 68%, white 68%)
 _paginate: false 
 -->
 
-![img w:400px h:80px](./images/logo.png)
+![img w:400px ](./images/tju_white_padding.png)
 # 请各位老师批评指正
 
 
 **BeWater**
 **2021-12-10**
-
